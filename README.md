@@ -1,12 +1,10 @@
 # owrpc
 
-*some cool badges will go here soon*
+![owrpc Promo Hero](https://i.imgur.com/prKdDfo.png)
 
 ###### Overwatch + Discord Rich Presence = <3
 
 ![A demonstration of the rich presence in action](https://i.imgur.com/MnPOmzD.png)
-
-![Another demonstration of the rich presence](https://i.imgur.com/v1l6Flx.png)
 
 ## About
 

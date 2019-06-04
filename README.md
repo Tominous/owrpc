@@ -20,6 +20,8 @@ Currently, Blizzard seems too focused on Battle.net as a platform (zzz) to imple
 
 - [ ] A functioning brain
 
+- [x] Discord ["Show game activity" enabled](https://i.imgur.com/VBAU5Cg.png)
+
 - [x] Some patience
 
 ## How to use

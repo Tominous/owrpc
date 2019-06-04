@@ -1,6 +1,6 @@
 # owrpc
 
-![owrpc Promo Hero](https://i.imgur.com/Dzkaq8i.png)
+![owrpc Promo Hero](https://i.imgur.com/mjThYAg.gif)
 
 ###### Overwatch + Discord Rich Presence = <3
 

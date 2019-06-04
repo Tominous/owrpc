@@ -134,7 +134,7 @@ try:
                 map[2] = m.standard[user][1] # Map mode
                 map[3] = m.standard[user][2] # Image key
                 print(str(map))
-            elif mode[2] == "any" and map in m.arcade:
+            elif mode[2] == "any" and user in m.arcade:
                 map[0] = user # Config file key
                 map[1] = m.arcade[user][0] # Friendly map name
                 map[2] = m.arcade[user][1] # Map mode

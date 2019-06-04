@@ -8,6 +8,7 @@ import time
 import sys
 import random
 import os
+from urllib.request import urlopen
 
 try:
     # Importing custom project-specific modules
@@ -88,7 +89,12 @@ def setPresence(preset,details='',state='',large_image='',large_text='',small_im
 owquotes = ["Cheers, love! The cavalry's here!","¡Apagando las luces!","Old soldiers are hard to kill.","Clear skies, full hearts, can't lose.","Initiating the hack.","Your guardian angel.","It's in the refrigerator.","Look out world, Tracer's here!","Nerf this!","Fire in the hole!","Die, die, die!","Justice rains from above!","I will be your shield!","All systems buzzing!"]
 
 print(c.smile + "Overwatch RPC Client v" + x.ver + " by github.com/maxicc (maxic#9999)")
-print(c.warn + "Questions? Comments? Feature requests? Head to https://git.io/fju4R!")
+onlver = urlopen("https://raw.githubusercontent.com/maxicc/owrpc/master/VERSION").read()
+if float(x.ver) != float(onlver):
+    print(c.warn + "You're out-of-date! The latest version on GitHub is " + str(onlver) + " and you're on " + x.ver + ".")
+else:
+    print(c.success + "You're up-to-date! The latest version on GitHub is " + str(onlver) + " and you're on " + x.ver + ".")
+print(c.info + "Questions? Comments? Feature requests? Head to https://git.io/fju4R!")
 print(c.blank + random.choice(owquotes))
 setPresence("inmenus")
 

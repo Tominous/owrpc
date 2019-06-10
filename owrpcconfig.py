@@ -8,7 +8,7 @@ class configs():
     """
 
     client = 583356928688783369
-    ver = "1.0.1"
+    ver = "1.0.2"
 
 class maps():
     """
@@ -34,6 +34,7 @@ class maps():
         "paris": ["Paris","Assault","paris"],
         "anubis": ["Temple of Anubis","Assault","temple-of-anubis"],
         "volskaya": ["Volskaya Industries","Assault","volskaya"],
+        "dorado": ["Dorado","Escort","dorado"],
         "havana": ["Havana","Escort","havana"],
         "junkertown": ["Junkertown","Escort","junkertown"],
         "rialto": ["Rialto","Escort","rialto"],

@@ -1,5 +1,7 @@
 # owrpc
 
+## You might also like [splat2rpc](https://git.io/splat2) - a Discord Rich Presence client for Nintendo's Splatoon 2!
+
 ![owrpc Promo Hero](https://i.imgur.com/mjThYAg.gif)
 
 ###### Overwatch + Discord Rich Presence = <3
@@ -26,11 +28,11 @@ Currently, Blizzard seems too focused on Battle.net as a platform (zzz) to imple
 
 ## How to use
 
-1. Clone the repo with `git clone https://github.com/maxicc/overwatch-rpc.git` or download the ZIP version from the top of this page.
+1. Clone the repo with `git clone https://github.com/maxicc/owrpc.git` or download the ZIP version from the top of this page.
 * *(sidenote: please do not change anything in the config file - you don't need your own Discord client ID or anything!)*
 2. Open up a Terminal window in the directory you cloned or downloaded this repo to.
 3. Run `pip install pypresence` if you don't already have it installed.
-4. Make sure Discord is running, then run `python owrpcMain.py`. You should be greeted by the program!
+4. Make sure Discord is running, then run `python owrpc.py`. You should be greeted by the program!
 5. That's it, you're done! 🎉 Now, run `!help` to see what commands are available. Or just, you know, look below.
 
 ## Commands

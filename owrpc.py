@@ -8,10 +8,10 @@ try:
     import sys
     import random
     import os
-    import requests
 
     try:
         # Importing custom project-specific modules
+        import requests
         from owrpcconfig import configs as x
         from owrpcconfig import maps as m
         # Importing pypresence
@@ -21,7 +21,7 @@ try:
     except Exception as e:
         # Warn the user that the modules can't be imported then exit with error code 1
         print("[!] Error! Couldn't import a module. Did you download the dependencies?")
-        print("[!] Check https://git.io/fju4R and make sure, then try running again.")
+        print("[!] Check https://git.io/owrpc and make sure, then try running again.")
         sys.exit(1)
 
     # If there is a file in this directory called ".nocol"
@@ -45,11 +45,11 @@ try:
         currmode = ''
         presets = {
             "example":["details","state","overwatch","large_text","overwatch-dark","small_text"],
-            "inmenus":["In Menus",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/fju4R 😊",None,None],
-            "inqueue":["In Queue",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/fju4R 😊",None,None],
-            "inqueue-comp":["Competitive: In Queue",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/fju4R 😊",None,None],
-            "inqueue-quick":["Quick Play: In Queue",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/fju4R 😊",None,None],
-            "inqueue-arcade":["Arcade: In Queue",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/fju4R 😊",None,None],
+            "inmenus":["In Menus",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/owrpc 😊",None,None],
+            "inqueue":["In Queue",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/owrpc 😊",None,None],
+            "inqueue-comp":["Competitive: In Queue",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/owrpc 😊",None,None],
+            "inqueue-quick":["Quick Play: In Queue",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/owrpc 😊",None,None],
+            "inqueue-arcade":["Arcade: In Queue",None,"overwatch","Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/owrpc 😊",None,None],
             "devmode":["Overwatch RPC Client","I'm being programmed!","maxic","Created by maxic#9999","overwatch","Under development!"]
         }
 
@@ -94,7 +94,7 @@ try:
             print(c.warn + "You're out-of-date! The latest version on GitHub is " + str(onlver) + " and you're on " + x.ver + ".")
         else:
             print(c.success + "You're up-to-date! Thanks for using the latest version.")
-        print(c.info + "Questions? Comments? Feature requests? Head to https://git.io/fju4R!")
+        print(c.info + "Questions? Comments? Feature requests? Head to https://git.io/owrpc!")
         print(c.blank + random.choice(owquotes))
 
     def setupGame():
@@ -118,7 +118,7 @@ try:
         elif mode[2] == "any":
             maps = buildList(m.standard) + ", " + buildList(m.arcade)
         else:
-            print(c.fail + "Something unexpected went wrong. Please report this at https://git.io/fju4R and say you hit point 1.")
+            print(c.fail + "Something unexpected went wrong. Please report this at https://git.io/owrpc and say you hit point 1.")
 
         print(c.info + "What map are you playing on?")
         print(c.info + "Your options are: " + maps)
@@ -141,7 +141,7 @@ try:
                 map[3] = m.arcade[user][2] # Image key
                 print(str(map))
             else:
-                print(c.fail + "Something unexpected went wrong. Please report this at https://git.io/fju4R and say you hit point 2.")
+                print(c.fail + "Something unexpected went wrong. Please report this at https://git.io/owrpc and say you hit point 2.")
 
         if mode[0] == "competitive":
             print(c.info + "What is your skill rating (SR)?")
@@ -173,7 +173,7 @@ try:
 
                 setPresence(None,details=mode[1] + ': In Game',state=map[2] + ' on ' + map[1],large_image=map[3],large_text=map[1],small_image=sr[1],small_text=str(sr[0]) + ' SR')
         else:
-            setPresence(None,details=mode[1] + ': In Game',state=map[2] + ' on ' + map[1],large_image=map[3],large_text=map[1],small_image="maxic",small_text="Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/fju4R 😊")
+            setPresence(None,details=mode[1] + ': In Game',state=map[2] + ' on ' + map[1],large_image=map[3],large_text=map[1],small_image="maxic",small_text="Running OWRPC v" + x.ver + " by maxic#9999! Download it at https://git.io/owrpc 😊")
 
     def setPresence(preset,details='',state='',large_image='',large_text='',small_image='',small_text=''):
         """
@@ -259,12 +259,12 @@ try:
 
         elif command.startswith("!help"):
             showGreeting()
-            print(c.warn + "MAINTENANCE SETTINGS")
+            print(c.warn + "MAINTENANCE COMMANDS")
             print(c.info + "!dev - Toggle development mode on or off.")
             print(c.info + "!help - View this help document.")
             print(c.info + "!quit - Close the program.")
             print(c.blank)
-            print(c.warn + "PRESENCE SETTINGS")
+            print(c.warn + "PRESENCE COMMANDS")
             print(c.info + "!game - Start set up for a game.")
             print(c.info + "!custom - Set up a custom presence.")
             print(c.info + "!menus - Set your presence to In Menus.")
@@ -304,7 +304,7 @@ try:
             clearPresence()
 
         else:
-            print(c.fail + "Couldn't find that command! Do !help if you need a refresher, or check out the documentation at https://git.io/fju4R.")
+            print(c.fail + "Couldn't find that command! Do !help if you need a refresher, or check out the documentation at https://git.io/owrpc.")
         pass
 except KeyboardInterrupt:
     print()

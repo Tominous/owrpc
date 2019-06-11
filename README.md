@@ -1,6 +1,11 @@
 # owrpc
 
-## You might also like [splat2rpc](https://git.io/splat2) - a Discord Rich Presence client for Nintendo's Splatoon 2!
+### You might also like [splat2rpc](https://git.io/splat2) - a Discord Rich Presence client for Nintendo's Splatoon 2!
+
+![version](https://img.shields.io/badge/version-1.0.3-yellow.svg)
+![made-with-python](https://img.shields.io/badge/Made%20with-Python-informational.svg)
+![python-versions](https://img.shields.io/badge/python-3.5%20|%203.6%20|%203.7-critical.svg)
+![GPL-license](https://img.shields.io/badge/license-GPLv3-green.svg)
 
 ![owrpc Promo Hero](https://i.imgur.com/mjThYAg.gif)
 

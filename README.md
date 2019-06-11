@@ -40,6 +40,7 @@ Currently, Blizzard seems too focused on Battle.net as a platform (zzz) to imple
 3. Run `pip install pypresence` if you don't already have it installed.
 4. Make sure Discord is running, then run `python owrpc.py`. You should be greeted by the program!
 5. That's it, you're done! 🎉 Now, run `!help` to see what commands are available. Or just, you know, look below.
+6. *EXTRA STEP FOR WINDOWS USERS!* When testing this program on Windows, I noticed that the Windows Terminal doesn't, by default, display ANSI colours, instead it will just show the escape code (which makes the console display really ugly)! To get around this, create a file called `.nocol` in the same directory as `owrpc.py` - this will disable the colours. You could also use an alternate terminal - I know that [Terminus](https://eugeny.github.io/terminus/) works fine, as may others. Conversely, other platforms that struggle to display ANSI colours can disable them using the `.nocol` file.
 
 ## Commands
 * !dev - Toggle development mode on or off.

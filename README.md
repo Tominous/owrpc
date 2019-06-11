@@ -6,6 +6,7 @@
 ![made-with-python](https://img.shields.io/badge/Made%20with-Python-informational.svg)
 ![python-versions](https://img.shields.io/badge/python-3.5%20|%203.6%20|%203.7-critical.svg)
 ![GPL-license](https://img.shields.io/badge/license-GPLv3-green.svg)
+[![pypresence](https://img.shields.io/badge/using-pypresence-00bb88.svg?logo=discord&logoWidth=20)](https://github.com/qwertyquerty/pypresence)
 
 ![owrpc Promo Hero](https://i.imgur.com/mjThYAg.gif)
 

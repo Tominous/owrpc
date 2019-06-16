@@ -8,7 +8,7 @@
 ![GPL-license](https://img.shields.io/badge/license-GPLv3-green.svg)
 [![pypresence](https://img.shields.io/badge/using-pypresence-00bb88.svg?logo=discord&logoWidth=20)](https://github.com/qwertyquerty/pypresence)
 
-![owrpc Promo Hero](https://i.imgur.com/mjThYAg.gif)
+![owrpc Promo Hero](https://i.imgur.com/FfKMwXx.png)
 
 ###### Overwatch + Discord Rich Presence = <3
 
